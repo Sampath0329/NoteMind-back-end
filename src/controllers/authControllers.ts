@@ -153,7 +153,7 @@ export const forgotPassword = async (req: Request, res: Response) => {
     const message = `
       <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 0 auto; border: 1px solid #e0e0e0; border-radius: 10px; overflow: hidden;">
         <div style="background-color: #4f46e5; padding: 20px; text-align: center;">
-          <h1 style="color: #ffffff; margin: 0; font-size: 24px;">SmartNotes AI</h1>
+          <h1 style="color: #ffffff; margin: 0; font-size: 24px;">NoteMind</h1>
         </div>
         <div style="padding: 30px; color: #333333; line-height: 1.6;">
           <h2 style="color: #1f2937; margin-top: 0;">Password Reset Request</h2>
@@ -170,14 +170,14 @@ export const forgotPassword = async (req: Request, res: Response) => {
           <p style="font-size: 12px; color: #999999; text-align: center;">මෙය ඔබ ඉල්ලූ දෙයක් නොවේ නම්, කරුණාකර මෙම ඊමේල් පණිවිඩය නොසලකා හරින්න.</p>
         </div>
         <div style="background-color: #f9fafb; padding: 15px; text-align: center; font-size: 12px; color: #9ca3af;">
-          &copy; ${new Date().getFullYear()} SmartNotes AI. All rights reserved.
+          &copy; ${new Date().getFullYear()} NoteMind. All rights reserved.
         </div>
       </div>
     `;
 
          await sendMail({
         to: user.email,
-        subject: "Password Reset Request - SmartNotes AI",
+        subject: "Password Reset Request - NoteMind ",
         text: message,
       });
 
