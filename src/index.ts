@@ -29,7 +29,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "https://note-mind-front-end.vercel.app",
-  "https://rad-final-note-mind-front-end.vercel.app/"
+  "https://rad-final-note-mind-front-end.vercel.app"
 ];
 
 app.use(cors({
